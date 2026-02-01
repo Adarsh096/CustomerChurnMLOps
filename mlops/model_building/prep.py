@@ -18,6 +18,7 @@ HUGGINGFACE_USER_NAME = 'AdarshRL'
 # Define constants for the dataset and output paths
 api = HfApi(token=os.getenv("HF_TOKEN"))
 DATASET_PATH = f"hf://datasets/{HUGGINGFACE_USER_NAME}/{HUGGINGFACE_DATASET_NAME}/bank_customer_churn.csv"
+
 bank_dataset = pd.read_csv(DATASET_PATH)
 print("Dataset loaded successfully.")
 

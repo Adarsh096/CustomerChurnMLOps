@@ -11,7 +11,7 @@ HUGGINGFACE_MODEL_NAME= 'churn-model'
 HUGGINGFACE_USER_NAME = 'AdarshRL'
 
 # Download the model from the Model Hub
-model_path = hf_hub_download(repo_id=f"{HUGGINGFACE_USER_NAME}/{HUGGINGFACE_MODEL_NAME}", filename="best_churn_model.joblib")
+model_path = hf_hub_download(repo_id=f"{HUGGINGFACE_USER_NAME}/{HUGGINGFACE_MODEL_NAME}", filename="best_churn_model_v1.joblib")
 
 # Load the model
 model = joblib.load(model_path)
